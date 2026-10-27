@@ -1,0 +1,19 @@
+{
+  "name": "wxt-split-tabs",
+  "description": "選んだ2つのタブを画面の左右に並べて表示するChrome拡張",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.300",
+    "typescript": "^5.6.0",
+    "wxt": "^0.20.0"
+  }
+}

@@ -1,0 +1,88 @@
+body {
+  width: 360px;
+  margin: 0;
+  padding: 12px;
+  font: 13px system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 320px;
+  margin: 0 0 8px;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab-button:hover:not(:disabled) {
+  background: #f3f6fb;
+}
+
+.tab-button[aria-pressed='true'] {
+  border-color: #1a73e8;
+  background: #e8f0fe;
+}
+
+.tab-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.icon {
+  flex: none;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-empty {
+  visibility: hidden;
+}
+
+.title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge {
+  flex: none;
+  min-width: 1.5em;
+  border-radius: 999px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.badge:empty {
+  display: none;
+}
+
+#split {
+  width: 100%;
+  padding: 6px;
+}

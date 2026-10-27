@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+iframe {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+}
+
+#left {
+  border-right: 2px solid #c0c0c0;
+}
